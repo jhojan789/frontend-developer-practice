@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --white: #FFFFFF;
+            --black: #000000;
+            --dark: #232830;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --sm: 1.4rem;
+            --md: 1.6rem;
+            --lg: 1.8rem;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html{
+                font-size: 62.5%;
+            }
+
+            body{
+                font-family: 'Quicksand', sans-serif;
+
+            }
+            
+            nav{
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 50px 16px 50px  ;
+                /* flex-wrap: wrap; */
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.046805);
+            }
+            
+            .menu{
+                display: none;
+            }
+            
+            .logo{
+                width: 140px;
+            }
+            
+            .navbar-left{
+                display: flex;
+                /* flex-wrap: wrap; */
+            }
+            .navbar-left ul
+            {
+                display: flex;
+                /* flex-wrap: wrap; */
+                align-items: center;
+                list-style: none;
+                margin-left: 50px;
+
+            }
+            .navbar-left ul li
+            {
+                font-weight: 500;
+                font-size: var(--md);
+                line-height: 20px;
+            }
+            
+            .navbar-left a{
+                text-decoration: none;
+                color: var(--very-light-pink);
+                border: 1px solid var(--white);
+                border-radius: 10px;
+                padding: 5px 14px;
+                
+            }
+            
+            .navbar-left a:hover{
+                border-color: var(--hospital-green);
+                color: var(--hospital-green);
+
+            }
+
+
+            
+            .navbar-right ul{
+                display: flex;
+                list-style: none;
+                align-items: center;
+                /* flex-wrap: wrap; */
+            }
+            
+            .navbar-email {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17.5px;
+                color: var(--black);
+                margin-right: 10px;
+                
+            }
+            
+            .down-arrow{
+                width: 10px;
+                height: 10px;
+                margin-right: 30px;
+            }
+            
+            .navbar-right ul div{
+                position: relative;
+                left: -10px;
+                top: -10px;
+                width: 10px;
+                height: 10px;
+                background-color: var(--hospital-green);
+                border-radius: 50%;
+                font-size: calc(var(--sm) * 0.55);
+                text-align: center;
+            }
+            
+            @media screen and (max-width: 640px) {
+                .menu{
+                    display: block;
+                }
+
+                .navbar-left{
+                    display: none;
+                }
+
+                .navbar-email{
+                    display: none;
+                }
+                .down-arrow{
+                    display: none;
+                }
+
+            }
+            
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="menu" src="./icons/icon_menu.svg" alt="menu">
+        <img class="logo" src="./logos/logo_yard_sale.svg" alt="logo">
+        <div class="navbar-left">
+            <ul>
+                <li><a href="#">All</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Toys</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            
+            <ul>
+                <li class="navbar-email">platzi@google.com</li>
+                <img class="down-arrow" src="./icons/down-arrow.svg" alt="down-arrow">
+                <li class="navbar-shopping-cart"><img src="./icons/icon_shopping_cart.svg" alt="shopping-cart"></li>
+                <div>2</div>
+            </ul>
+            
+        </div>
+        
+    </nav>
+</body>
+</html>
+
